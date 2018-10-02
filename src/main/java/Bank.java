@@ -99,6 +99,7 @@ public class Bank {
      *
      * @return the total number of accounts
      */
+    public static int totalAccounts = 0;
     public static int getNumberOfAccount() {
         return totalAccounts;
     }
