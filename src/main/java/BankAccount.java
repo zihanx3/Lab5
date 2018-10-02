@@ -25,6 +25,7 @@ public class BankAccount {
     private String ownerName;
     public double interestRate;
     private double interestEarned;
+    public static int totalAccounts = 0;
 
     public BankAccount(final String name, final BankAccountType accountCategory) {
         accountType = accountCategory;

@@ -82,14 +82,13 @@ public class Bank {
         bankAccount.getOwnerName() = name;
     }
 
-    public static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
      * @return the total number of accounts
      */
     public static int getNumberOfAccount() {
-        totalAccounts++;
+        return totalAccounts;
     }
 
     /**
