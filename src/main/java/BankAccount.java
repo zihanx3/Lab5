@@ -32,6 +32,9 @@ public class BankAccount {
         ownerName = name;
         totalAccounts++;
     }
+    public static int totalAccounts() {
+        return totalAccounts;
+    }
 
     public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
