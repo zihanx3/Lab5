@@ -111,14 +111,18 @@ public class Bank {
         System.out.println("Bank account for Johy Ive created\n\n");
 
         // Deposit money to both accounts and print new balance
-        bank.depositMoney(account1, 1000.0);
-        bank.depositMoney(account2, 5000.0);
+        final double amount1 = 1000.0;
+        final double amount2 = 5000.0;
+        bank.depositMoney(account1, amount1);
+        bank.depositMoney(account2, amount2);
 
         // Withdraw money from Account 2 and print new balance
-        bank.withdrawMoney(account2, 200.0);
+        final double amount3 = 200.0;
+        bank.withdrawMoney(account2, amount3);
 
         // Transfer money from Account 2 to Account 1 and print new balances
-        bank.transferMoney(account2, account1, 350.0);
+        final double amount4 = 350.0;
+        bank.transferMoney(account2, account1, amount4);
 
         // Print number of accounts
         System.out.print("Number of active accounts at " + bank.bankName + " are ");
